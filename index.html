@@ -5,20 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
+  <title>Formulário de Cadastro</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
   <section class="container">
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Repellendus nisi explicabo saepe voluptatibus consequuntur et corporis
-      maxime quos, doloribus vitae voluptatum quisquam necessitatibus
-      pariatur veritatis exercitationem beatae officiis suscipit Ea!
-    </p>
+    <h1>Formulário de Cadastro</h1>
+    <ul>
+      <li>Nenhum campo pode estar vazio</li>
+      <li>Usuário só poderá conter letras e/ou números</li>
+      <li>Nenhum campo pode estar vazio</li>
+      <li>Senha precisa ter entre 6 e 12 caracteres</li>
+    </ul>
+
+    <form action=" /" method="POST" class="formulario">
+      <label>Nome</label>
+      <input type="text" class="nome validar">
+      <label>Sobrenome</label>
+      <input type="text" class="sobrenome validar">
+      <label>CPF</label>
+      <input type="text" class="cpf validar">
+      <label>Usuário</label>
+      <input type="text" class="usuario validar">
+      <label>Senha</label>
+      <input type="text" class="senha validar">
+      <label>Repetir a senha</label>
+      <input type="text" class="repetir-senha validar">
+      <button type="submit">Enviar</button>
+    </form>
+    
   </section>
 
   <script src="./assets/js/main.js"></script>
